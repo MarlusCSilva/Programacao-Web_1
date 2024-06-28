@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-lateral {
+    width: 250px;
+    height: 100vh; /* Altura igual à altura da janela de visualização */
+    background-color: #007acc;
+    float: left;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-lateral li {
+    margin: 10px;
+}
+
+.menu-lateral a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin-left: 260px; /* Deixando espaço para o menu lateral */
+    padding: 20px;
+}
+
+.divisao-1 {
+    background-color: #ffcc00;
+}
+
+.divisao-2 {
+    background-color: #ff6666;
+}
+
+.divisao-3 {
+    background-color: #66cc66;
+}

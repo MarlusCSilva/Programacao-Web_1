@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <form>
+        <label>Descrição: </label><input type="text" id="textDesc"><br/>
+        <label>Valor: </label><input type="text" id="textValor"><br/>
+        <label>Quantidade: </label><input type="number" id="textQtd"><br/>
+    </form>
+    <button onclick="adicionarNaTabela()">Adicionar</button>
+    <table border="1">
+        <caption>Lista de Compras</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>DESCRIÇÃO</th>
+                <th>VALOR</th>
+                <th>QUANTIDADE</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody id="conteudo">
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total</td>
+                <td id="totalcompra" onclick="negrito(this)">0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <form>
+        <input type="radio" name="rbPagto" id="cartao"/><label for="cartao">Cartão de Crédito</label>
+        <input type="radio" name="rbPagto" id="dinheiro"/><label for="dinheiro">Dinheiro</label>
+    </form>
+    <img src="cifrao.png"/>
+    <button onclick="pagarConta()">Pagar</button>
+</body>
+</html>
